@@ -13,7 +13,7 @@ jobs:
 
   test:
     docker:
-      - image: circleci/jessie-browsers # ジョブのコマンドが実行されるプライマリ コンテナ
+      - image: circleci/node # ジョブのコマンドが実行されるプライマリ コンテナ
     steps:
       - checkout # プロジェクト ディレクトリ内のコードをチェック アウトします
       - run : 
