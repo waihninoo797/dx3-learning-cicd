@@ -2,7 +2,7 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: circleci/node:16.3.0 # ジョブのコマンドが実行されるプライマリ コンテナ
+      - image: circleci/12.16.1 # ジョブのコマンドが実行されるプライマリ コンテナ
     steps:
       - checkout # プロジェクト ディレクトリ内のコードをチェック アウトします
       - run : 
@@ -13,7 +13,7 @@ jobs:
 
   test:
     docker:
-      - image: circleci/node:16.3.0  # ジョブのコマンドが実行されるプライマリ コンテナ
+      - image: circleci/12.16.1  # ジョブのコマンドが実行されるプライマリ コンテナ
     steps:
       - checkout # プロジェクト ディレクトリ内のコードをチェック アウトします
       - run : 
