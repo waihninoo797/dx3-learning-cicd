@@ -9,7 +9,7 @@ jobs:
           name: Build front-end
           command: |
             npm install
-            npm build
+            npm run build
 
   test:
     docker:
@@ -20,7 +20,7 @@ jobs:
           name: Test front-end
           command: |
             npm install
-            npm test
+            npm run test
 
 workflows:
   my_workflow:
