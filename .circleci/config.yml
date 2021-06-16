@@ -8,9 +8,8 @@ jobs:
       - run : 
           name: Build front-end
           command: |
+            #### npm run install
             #### Write the command
-            #### Write the command
-
   test:
     docker:
       - image: circleci/node # ジョブのコマンドが実行されるプライマリ コンテナ
@@ -21,7 +20,6 @@ jobs:
           command: |
             ### Write the command
             ### Write the command
-
 workflows:
   my_workflow:
     jobs:
