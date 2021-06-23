@@ -19,7 +19,7 @@ jobs:
           name: Test front-end
           command: |
             npm install
-            npm run test --browsers=ChromeHeadlessCI
+            npm run test --no-watch --no-progress　--browsers=ChromeHeadlessCI
 workflows:
   my_workflow:
     jobs:
